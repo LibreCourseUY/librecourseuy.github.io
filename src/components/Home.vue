@@ -14,8 +14,8 @@
     <section class="english-section">
       <h2>¿Por qué todo está en inglés?</h2>
       <p>
-        Puede parecer奇怪 (raro) ver todo en inglés en un sitio para estudiantes uruguayos. 
-        Aquí te explicamos el razonamiento:
+        Puede parecer raro ver todo en ingl&eacute;s en un sitio para estudiantes uruguayos. 
+        Aqu&iacute; te explicamos el razonamiento:
       </p>
       <ul class="english-reasons">
         <li>
@@ -74,108 +74,75 @@
     </section>
 
     <section class="challenges">
-      <h2>Desafíos Personales</h2>
+      <h2>Personal Challenges</h2>
       <p>
-        ¿Querés empezar a contribuir pero no sabés por dónde? Estos desafíos son code-agnostic, 
-        funcionan con cualquier lenguaje o tecnología:
+        Want to start contributing but don't know where to begin? These challenges are code-agnostic, 
+        they work with any language or technology:
       </p>
       <div class="challenges-grid">
         <div class="challenge-card">
-          <h3>🔤 Desafío 1: README Translator</h3>
+          <h3>Challenge 1: README Translator</h3>
           <p>
-            Tomá un proyecto open source que te interese y traducí su README al español. 
-            Es una excelente forma de contribuir y aprender sobre el proyecto.
+            Pick an open source project you like and translate its README to Spanish. 
+            It's a great way to contribute and learn about the project.
           </p>
         </div>
         <div class="challenge-card">
-          <h3>🐛 Desafío 2: Bug Hunter</h3>
+          <h3>Challenge 2: Bug Hunter</h3>
           <p>
-            Buscá en la pestaña "Issues" de algún repositorio. Intentá reproducir un bug 
-            y si podés, sugerí una solución. No necesitás código para empezar.
+            Browse the "Issues" tab of any repository. Try to reproduce a bug 
+            and if you can, suggest a solution. You don't need code to get started.
           </p>
         </div>
         <div class="challenge-card">
-          <h3>📝 Desafío 3: Documentation Hero</h3>
+          <h3>Challenge 3: Documentation Hero</h3>
           <p>
-            Encontrá algo en un proyecto que no esté documentado y agregá un ejemplo de uso 
-            o explicá cómo funciona. La documentación siempre necesita mejoras.
+            Find something in a project that isn't documented and add a usage example 
+            or explain how it works. Documentation always needs improvements.
           </p>
         </div>
         <div class="challenge-card">
-          <h3>🎨 Desafío 4: First Issue</h3>
+          <h3>Challenge 4: First Issue</h3>
           <p>
-            BuscáIssues con标签 "good first issue" o "help wanted" en cualquier repositorio. 
-            Son problemas diseñados para principiantes. Empezá con algo pequeño.
+            Look for Issues with labels "good first issue" or "help wanted" in any repository. 
+            These are problems designed for beginners. Start with something small.
           </p>
         </div>
         <div class="challenge-card">
-          <h3>💡 Desafío 5: Tu Propio Proyecto</h3>
+          <h3>Challenge 5: Your Own Project</h3>
           <p>
-            ¿Tenés una idea? Creá un repositorio, escribí un buen README, y publicá tu código. 
-            No tiene que ser perfecto, tiene que existir.
+            Have an idea? Create a repository, write a good README, and publish your code. 
+            It doesn't have to be perfect, it just has to exist.
           </p>
         </div>
         <div class="challenge-card">
-          <h3>🤝 Desafío 6: Code Review</h3>
+          <h3>Challenge 6: Code Review</h3>
           <p>
-            Pedí acceso de lectura a un repositorio y revisá el código de otros. 
-            No necesitás aprobar todo, con sugerir mejoras ya ayudás.
+            Ask for read access to a repository and review others' code. 
+            You don't need to approve everything, suggesting improvements helps too.
           </p>
         </div>
-      </div>
-    </section>
-
-    <section class="documentation">
-      <h2>Documentación Importante</h2>
-      <p>
-        Recursos esenciales para tu día a día como desarrollador:
-      </p>
-      <div class="docs-grid">
-        <a href="https://developer.mozilla.org/" target="_blank" class="doc-card">
-          <h4>MDN Web Docs</h4>
-          <p>Documentación completa de HTML, CSS, JavaScript y APIs web</p>
-        </a>
-        <a href="https://docs.github.com/" target="_blank" class="doc-card">
-          <h4>GitHub Docs</h4>
-          <p>Todo sobre Git, GitHub y colaboración</p>
-        </a>
-        <a href="https://git-scm.com/doc" target="_blank" class="doc-card">
-          <h4>Git Docs</h4>
-          <p>Documentación oficial de Git</p>
-        </a>
-        <a href="https://devdocs.io/" target="_blank" class="doc-card">
-          <h4>DevDocs</h4>
-          <p>API documentation browser con búsqueda unificada</p>
-        </a>
-        <a href="https://hackterms.com/" target="_blank" class="doc-card">
-          <h4>HackTerms</h4>
-          <p>Diccionario de términos de programación</p>
-        </a>
-        <a href="https://stackoverflow.com/" target="_blank" class="doc-card">
-          <h4>Stack Overflow</h4>
-          <p>Preguntas y respuestas de la comunidad</p>
-        </a>
       </div>
     </section>
 
     <section class="quick-links">
-      <h2>Proyectos</h2>
+      <h2>Our Projects</h2>
       <div class="links-grid">
         <a href="https://github.com/fingdev/fingdev.github.io" target="_blank" class="link-card">
           <h4>fingdev.github.io</h4>
-          <p>Esta página web - El portal de la comunidad Fingdev</p>
+          <p>This website - The Fingdev community portal</p>
         </a>
         <a href="https://github.com/fingdev/fingcomms" target="_blank" class="link-card">
           <h4>fingcomms</h4>
-          <p>Directorio de grupos de estudiantes de Fing</p>
+          <p>Directory of Fing student groups</p>
         </a>
         <a href="https://github.com/fingdev/fingdb" target="_blank" class="link-card">
           <h4>fingDB</h4>
-          <p>Base de datos central con info de cursos</p>
+          <p>Central database with course information</p>
         </a>
         <a href="https://github.com/fingdev/fingmap" target="_blank" class="link-card">
           <h4>fingmap</h4>
-          <p>Mapa interactivo del campus</p>
+          <p>Interactive campus map</p>
         </a>
       </div>
     </section>
