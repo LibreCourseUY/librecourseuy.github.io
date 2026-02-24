@@ -17,7 +17,7 @@
       </p>
       <p>
         We use DeepWiki across all our projects to help you understand the codebase faster. 
-        Check the <router-link to="/repos">Projects</router-link> page for DeepWiki links to each repository.
+        Check the <router-link to="/repos" class="inline-link">Projects</router-link> page for DeepWiki links to each repository.
       </p>
       <div class="deepwiki-example">
         <span class="example-label">Why it's useful:</span>
@@ -262,6 +262,17 @@ section {
 
 .deepwiki-link:hover {
   text-decoration: underline;
+}
+
+.inline-link {
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.inline-link:hover {
+  opacity: 0.8;
 }
 
 .deepwiki-example {
