@@ -143,6 +143,24 @@
       </div>
       
       <div class="guideline-section">
+        <h3>Signed Commits (Required)</h3>
+        <p class="signed-warning">
+          All commits must be signed. This is a <strong>mandatory requirement</strong> for contributing.
+        </p>
+        <div class="signed-why">
+          <h4>Why Signed Commits?</h4>
+          <ul>
+            <li><strong>Security</strong>: Verifies that you are who you claim to be</li>
+            <li><strong>Integrity</strong>: Guarantees the commit wasn't modified after creation</li>
+            <li><strong>Trust</strong>: Other contributors know changes genuinely come from you</li>
+            <li><strong>Professionalism</strong>: Industry best practice for open source projects</li>
+          </ul>
+        </div>
+        <p>Set up your SSH key following our <router-link to="/git">Git Guide</router-link>.</p>
+        <code>git config --global commit.gpgsign true</code>
+      </div>
+      
+      <div class="guideline-section">
         <h3>Pull Request Requirements</h3>
         <ul>
           <li>Describe what you changed and why</li>
@@ -341,6 +359,42 @@ a {
   border-radius: 4px;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+}
+
+.signed-warning {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--warning);
+  border-radius: 8px;
+  padding: 1rem;
+  color: var(--text-primary);
+}
+
+.signed-warning strong {
+  color: var(--warning);
+}
+
+.signed-why {
+  margin: 1rem 0;
+}
+
+.signed-why h4 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.signed-why ul {
+  list-style: none;
+}
+
+.signed-why li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.signed-why li::before {
+  content: "✓";
+  color: var(--success);
+  margin-right: 0.5rem;
 }
 
 .guideline-section ul {
