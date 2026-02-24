@@ -111,8 +111,8 @@ All commits must be signed. This is a mandatory requirement for contributing.
 
 ### Setup
 
-Follow our Git Guide to set up your SSH key:
-- [SSH Key Setup](https://fingdev.github.io/git)
+Follow our Git Guide to set up your GPG key:
+- [GPG Key Setup](https://fingdev.github.io/git)
 
 Configure Git to sign commits by default:
 ```bash

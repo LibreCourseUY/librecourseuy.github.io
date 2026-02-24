@@ -93,55 +93,68 @@ git config --global user.email "your.email@example.com"</code>
     </section>
 
     <section class="ssh-setup">
-      <h2>SSH Key Setup (Mandatory for Contributing)</h2>
+      <h2>GPG Key Setup</h2>
+      <p class="mandatory-badge">Mandatory for Contributing</p>
       <p class="warning">
-        An SSH key is <strong>required</strong> to contribute to our repositories. It allows secure authentication without entering your password every time.
+        A GPG key is <strong>required</strong> to contribute to our repositories. It signs your commits cryptographically.
       </p>
 
       <div class="install-group">
-        <h3>Linux</h3>
+        <h3>Install GPG</h3>
+        <p class="install-label">Debian/Ubuntu:</p>
         <div class="code-block">
-          <code>ssh-keygen -t ed25519 -C "your.email@example.com"</code>
+          <code>sudo apt install gnupg</code>
         </div>
-        <p>Press Enter to accept default location. Optionally add a passphrase.</p>
-      </div>
-
-      <div class="install-group">
-        <h3>Windows (Git Bash or WSL)</h3>
+        <p class="install-label">Arch:</p>
         <div class="code-block">
-          <code>ssh-keygen -t ed25519 -C "your.email@example.com"</code>
+          <code>sudo pacman -S gnupg</code>
         </div>
-      </div>
-
-      <div class="install-group">
-        <h3>Add Key to SSH Agent</h3>
+        <p class="install-label">Fedora:</p>
         <div class="code-block">
-          <code>eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519</code>
+          <code>sudo dnf install gnupg</code>
         </div>
       </div>
 
       <div class="install-group">
-        <h3>Add Public Key to GitHub</h3>
-        <ol class="steps-list">
-          <li>Copy your public key:</li>
-          <div class="code-block">
-            <code>cat ~/.ssh/id_ed25519.pub</code>
-          </div>
-          <li>Go to GitHub → Settings → SSH and GPG keys → New SSH key</li>
-          <li>Paste the key and save</li>
-        </ol>
+        <h3>Generate GPG Key</h3>
+        <div class="code-block">
+          <code>gpg --full-generate-key</code>
+        </div>
+        <p>Choose RSA (option 1), 4096 bits, set expiration, enter your name and email.</p>
       </div>
 
       <div class="install-group">
-        <h3>Test Connection</h3>
+        <h3>Get Your Key ID</h3>
         <div class="code-block">
-          <code>ssh -T git@github.com</code>
+          <code>gpg --list-secret-keys --keyid-format=long</code>
+        </div>
+        <p>Copy the key ID after the slash (e.g., 3AA5C34371567BD2)</p>
+      </div>
+
+      <div class="install-group">
+        <h3>Add to GitHub</h3>
+        <div class="code-block">
+          <code>gpg --armor --export 3AA5C34371567BD2</code>
+        </div>
+        <p>Copy the output and go to GitHub → Settings → SSH and GPG keys → New GPG key.</p>
+      </div>
+
+      <div class="install-group">
+        <h3>Configure Git</h3>
+        <div class="code-block">
+          <code>git config --global gpg.program gpg
+git config --global user.signingkey 3AA5C34371567BD2
+git config --global commit.gpgsign true</code>
         </div>
       </div>
 
       <p class="signed-commits-note">
         <router-link to="/docs/signing">Learn more about signed commits and why they are required</router-link>
+      </p>
+
+      <p class="recommendation">
+        <strong>Also recommended:</strong> Set up an SSH key for password-free authentication. 
+        See <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" target="_blank">GitHub SSH Guide</a>.
       </p>
     </section>
 
@@ -504,8 +517,48 @@ p {
   font-weight: 500;
 }
 
+.recommendation {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.recommendation strong {
+  color: var(--text-primary);
+}
+
+.recommendation a {
+  color: var(--primary);
+}
+
 .ssh-setup {
   margin-bottom: 3rem;
+}
+
+.mandatory-badge {
+  display: inline-block;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.install-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.install-label:first-of-type {
+  margin-top: 0;
 }
 
 .ssh-setup .warning {

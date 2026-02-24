@@ -9,10 +9,12 @@ import Docs from './components/Docs.vue'
 import Signing from './components/Signing.vue'
 import HowToLearn from './components/HowToLearn.vue'
 import Licensing from './components/Licensing.vue'
+import Linux from './components/Linux.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/learn', component: HowToLearn },
+  { path: '/learn/linux', component: Linux },
   { path: '/git', component: GitGuide },
   { path: '/repos', component: Repos },
   { path: '/contribute', component: Contribute },

@@ -21,14 +21,14 @@
       </p>
       <div class="deepwiki-example">
         <span class="example-label">Why it's useful:</span>
-        <p>When you're trying to contribute to a new project, DeepWiki helps you understand the codebase structure, API endpoints, and how different components connect — exactly when you need it.</p>
+        <p>When you're trying to contribute to a new project, DeepWiki helps you understand the codebase structure, API endpoints, and how different components connect, exactly when you need it.</p>
       </div>
     </section>
 
     <section class="philosophy">
       <h2>Assisted Autonomy</h2>
       <p>
-        We believe in <strong>assisted autonomy</strong> — a learning approach that balances 
+        We believe in <strong>assisted autonomy</strong>, a learning approach that balances 
         independence with guidance. This method builds real, lasting skills rather than 
         temporary copy-paste knowledge.
       </p>
@@ -36,8 +36,175 @@
       <p>
         <strong>DeepWiki</strong> (deepwiki.dev) is an AI-powered documentation service 
         that automatically generates comprehensive documentation for GitHub repositories. 
-        It analyzes code and creates API references, architecture diagrams, and code explanations — a perfect example of when AI can be useful: when documentation is scarce or nonexistent.
+        It analyzes code and creates API references, architecture diagrams, and code explanations, a perfect example of when AI can be useful: when documentation is scarce or nonexistent.
       </p>
+    </section>
+
+    <section class="scope">
+      <h2>What Can You Learn?</h2>
+      <p>
+        This approach works for <strong>anything</strong> in programming:
+      </p>
+      <div class="scope-grid">
+        <div class="scope-card">
+          <div class="card-icon">💻</div>
+          <h3>Programming Languages</h3>
+          <p>Python, JavaScript, Rust, Go, C, Java, and more</p>
+        </div>
+        <div class="scope-card">
+          <div class="card-icon">🛠️</div>
+          <h3>Frameworks</h3>
+          <p>React, Vue, FastAPI, Django, Express, Spring, and more</p>
+        </div>
+        <div class="scope-card">
+          <div class="card-icon">🔧</div>
+          <h3>Tools & Technologies</h3>
+          <p>Git, Docker, PostgreSQL, MongoDB, AWS, Linux, and more</p>
+        </div>
+      </div>
+      <div class="scope-note">
+        <span class="note-icon">💡</span>
+        <p>The key is: <strong>context first → build real stuff → ask for help when stuck</strong></p>
+      </div>
+    </section>
+
+    <section class="recommended">
+      <h2>Recommended for Beginners</h2>
+      <p>Start with these languages and frameworks based on your goals:</p>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">🎯</span>
+          <h3>Web Development</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Popular</div>
+            <h4>JavaScript + React</h4>
+            <p>Most popular, huge community, infinite resources</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Easy</div>
+            <h4>Python + FastAPI</h4>
+            <p>Great for APIs, easy syntax, very readable</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">🖥️</span>
+          <h3>Systems & Low-Level</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Modern</div>
+            <h4>Rust</h4>
+            <p>Modern, safe, great for learning systems programming</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Foundation</div>
+            <h4>C</h4>
+            <p>Foundation of everything, understand how computers work</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">📱</span>
+          <h3>Mobile Development</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Cross-platform</div>
+            <h4>React Native</h4>
+            <p>Use JavaScript for iOS and Android</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Beautiful</div>
+            <h4>Flutter (Dart)</h4>
+            <p>Google's framework, beautiful UIs</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">🤖</span>
+          <h3>Data & AI</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Top</div>
+            <h4>Python</h4>
+            <p>The language for AI/ML, easiest for data science</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Growing</div>
+            <h4>Julia</h4>
+            <p>Growing fast in scientific computing</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">⚙️</span>
+          <h3>Automation & Scripting</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Versatile</div>
+            <h4>Python</h4>
+            <p>Scripts, automation, dev tools, APIs, everything</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Browser</div>
+            <h4>JavaScript</h4>
+            <p>Browser automation, Node.js scripts, web scrapers</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">System</div>
+            <h4>Bash</h4>
+            <p>Shell scripting, Linux automation, CLI tools</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Fast</div>
+            <h4>Go</h4>
+            <p>High-performance scripts, CLI tools, automation</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recommend-section">
+        <div class="section-header">
+          <span class="section-icon">🚀</span>
+          <h3>Other Languages</h3>
+        </div>
+        <div class="recommend-grid">
+          <div class="recommend-card">
+            <div class="card-badge">Trending</div>
+            <h4>Ruby</h4>
+            <p>Elegant syntax, great for web development with Rails</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Web</div>
+            <h4>TypeScript</h4>
+            <p>JavaScript with types, great for large web apps</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Enterprise</div>
+            <h4>Java</h4>
+            <p>Industry standard, Android, enterprise backends</p>
+          </div>
+          <div class="recommend-card">
+            <div class="card-badge">Game</div>
+            <h4>C#</h4>
+            <p>Game development (Unity), Windows apps, .NET</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="approach">
@@ -50,7 +217,7 @@
         </div>
         <p>
           Watch a short tutorial (no more than 2 hours) to understand the basic syntax 
-          and structure of the language or tool. Don't try to learn everything — just 
+          and structure of the language or tool. Don't try to learn everything, just 
           get enough context to understand what you're looking at.
         </p>
         <div class="example">
@@ -71,7 +238,7 @@
         </p>
         <div class="example">
           <span class="example-label">Example:</span>
-          <p>You want to contribute to fingcomms. Clone the repo, try to understand the code, make a small change, and push it. When you encounter an error, search on Stack Overflow, read the FastAPI docs, ask in the community — but don't use AI.</p>
+          <p>You want to contribute to fingcomms. Clone the repo, try to understand the code, make a small change, and push it. When you encounter an error, search on Stack Overflow, read the FastAPI docs, ask in the community, but don't use AI.</p>
         </div>
       </div>
 
@@ -99,19 +266,19 @@
       </p>
       <ul class="reasons">
         <li>
-          <strong>You don't remember what you didn't struggle for</strong> — copy-pasting AI code 
+          <strong>You don't remember what you didn't struggle for</strong>, copy-pasting AI code 
           doesn't build muscle memory or deep understanding
         </li>
         <li>
-          <strong>AI gives answers, not skills</strong> — real problem-solving ability comes 
+          <strong>AI gives answers, not skills</strong>, real problem-solving ability comes 
           from figuring things out yourself
         </li>
         <li>
-          <strong>You'll hit a wall in interviews</strong> — technical interviews test your 
+          <strong>You'll hit a wall in interviews</strong>, technical interviews test your 
           actual knowledge, not AI's
         </li>
         <li>
-          <strong>You learn how to learn</strong> — the meta-skill of finding answers is 
+          <strong>You learn how to learn</strong>, the meta-skill of finding answers is 
           more valuable than any specific answer
         </li>
       </ul>
@@ -139,7 +306,7 @@
           <span class="priority">1</span>
           <div>
             <h4>Official Documentation</h4>
-            <p>MDN, Python Docs, Rust Docs — always start here</p>
+            <p>MDN, Python Docs, Rust Docs, always start here</p>
           </div>
         </div>
         <div class="priority-item">
@@ -314,6 +481,170 @@ h2 {
   font-size: 1.1rem;
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.scope {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scope p {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.scope-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.scope-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.scope-card h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.scope-card p {
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+}
+
+.scope-note {
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(167, 139, 250, 0.1));
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.note-icon {
+  font-size: 1.5rem;
+}
+
+.scope-note p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.scope-note strong {
+  color: var(--primary);
+}
+
+.recommended {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recommended > p {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recommend-section {
+  margin-bottom: 2rem;
+}
+
+.recommend-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-icon {
+  font-size: 1.5rem;
+}
+
+.section-header h3 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.recommend-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.recommend-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.card-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.recommend-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding-right: 60px;
+}
+
+.recommend-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
 }
 
 .approach {
@@ -533,13 +864,35 @@ h2 {
   
   h2 {
     font-size: 1.25rem;
+    margin: 0 1rem 1rem;
   }
   
+  .scope,
+  .recommended,
   .philosophy,
   .phase,
   .getting-started {
     padding: 1.5rem;
-    margin: 0 1rem;
+    margin: 0 1rem 1.5rem;
+  }
+  
+  .scope-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .recommend-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .scope-note {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
   
   .phase-header {

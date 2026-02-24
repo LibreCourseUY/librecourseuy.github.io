@@ -6,8 +6,8 @@
         Open Source projects made by students, for students.
       </p>
       <div class="hero-buttons">
-        <router-link to="/repos" class="btn btn-primary">Explore Projects</router-link>
-        <router-link to="/git" class="btn btn-secondary">Learn Git</router-link>
+        <router-link to="/learn" class="btn btn-primary">Start to Learn</router-link>
+        <router-link to="/contribute" class="btn btn-secondary">Start Contributing</router-link>
       </div>
     </section>
 
@@ -146,6 +146,10 @@
         </a>
       </div>
     </section>
+
+    <router-link to="/contribute" class="contribute-popup">
+      <span>👀</span> See something you don't like? Contribute and change it!
+    </router-link>
   </div>
 </template>
 
@@ -512,6 +516,40 @@ export default {
   .doc-card,
   .link-card {
     padding: 1rem;
+  }
+}
+
+.contribute-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  z-index: 100;
+}
+
+.contribute-popup:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .contribute-popup {
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+    font-size: 0.8rem;
   }
 }
 </style>

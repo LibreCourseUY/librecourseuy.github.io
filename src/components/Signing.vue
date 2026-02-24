@@ -4,6 +4,12 @@
     <p class="intro">
       Learn why signed commits are mandatory and how to set them up.
     </p>
+    <p class="official-links">
+      <span class="official-label">Official GitHub Docs:</span>
+      <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key" target="_blank">Generate GPG Key</a>
+      <span class="separator">|</span>
+      <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits" target="_blank">Signing Commits</a>
+    </p>
 
     <section class="why-signed">
       <h2>Why Signed Commits?</h2>
@@ -102,8 +108,83 @@
     </section>
 
     <section class="setup-guide">
-      <h2>Setup Your SSH Key</h2>
-      <p>Follow these steps to set up signed commits:</p>
+      <h2>Setup GPG Signing</h2>
+      <p>Follow these steps to set up signed commits with GPG:</p>
+
+      <div class="step-group">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h4>Install GPG</h4>
+            <p class="install-label">Debian/Ubuntu:</p>
+            <div class="code-block">
+              <code>sudo apt install gnupg</code>
+            </div>
+            <p class="install-label">Arch:</p>
+            <div class="code-block">
+              <code>sudo pacman -S gnupg</code>
+            </div>
+            <p class="install-label">Fedora:</p>
+            <div class="code-block">
+              <code>sudo dnf install gnupg</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h4>Generate GPG Key</h4>
+            <div class="code-block">
+              <code>gpg --full-generate-key</code>
+            </div>
+            <p>Choose RSA (option 1), 4096 bits, set expiration (or none), enter your name and email.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h4>Get Your Key ID</h4>
+            <div class="code-block">
+              <code>gpg --list-secret-keys --keyid-format=long</code>
+            </div>
+            <p>Look for the line starting with "sec" and copy the key ID after the slash (e.g., 3AA5C34371567BD2)</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h4>Export Public Key</h4>
+            <div class="code-block">
+              <code>gpg --armor --export 3AA5C34371567BD2</code>
+            </div>
+            <p>Copy the output (starts with -----BEGIN PGP PUBLIC KEY BLOCK-----) and add it to GitHub → Settings → SSH and GPG keys → New GPG key.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h4>Configure Git</h4>
+            <div class="code-block">
+              <code>git config --global gpg.program gpg</code>
+            </div>
+            <div class="code-block">
+              <code>git config --global user.signingkey YOUR_KEY_ID</code>
+            </div>
+            <div class="code-block">
+              <code>git config --global commit.gpgsign true</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="setup-guide ssh-guide">
+      <h2>SSH Signing (Alternative)</h2>
+      <p>You can also use SSH keys instead of GPG. Both are accepted.</p>
 
       <div class="step-group">
         <div class="step">
@@ -146,17 +227,6 @@ ssh-add ~/.ssh/id_ed25519</code>
             <div class="code-block">
               <code>git config --global commit.gpgsign true</code>
             </div>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-number">5</div>
-          <div class="step-content">
-            <h4>Test Your Setup</h4>
-            <div class="code-block">
-              <code>ssh -T git@github.com</code>
-            </div>
-            <p>You should see a message confirming your connection.</p>
           </div>
         </div>
       </div>
@@ -208,7 +278,38 @@ h1 {
 .intro {
   font-size: 1.2rem;
   color: var(--text-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.official-links {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.official-label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.official-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.official-links a:hover {
+  text-decoration: underline;
+}
+
+.official-links .separator {
+  color: var(--border);
+  margin: 0 0.25rem;
 }
 
 section {
@@ -352,13 +453,38 @@ h2 {
   border-radius: 8px;
   padding: 1rem;
   overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .code-block code {
   font-family: 'Fira Code', 'Consolas', monospace;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-primary);
   white-space: pre;
+  display: block;
+  color: var(--text-primary);
+  white-space: pre;
+}
+
+.gpg-guide {
+  margin-top: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.gpg-guide h2 {
+  color: var(--primary);
+}
+
+.ssh-guide {
+  margin-top: 2rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
 }
 
 .legal-protection {

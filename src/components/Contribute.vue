@@ -36,6 +36,11 @@
       <h2>Getting Started</h2>
       <p>New to open source? Here's how to start:</p>
       
+      <div class="license-note">
+        <span class="note-icon">📜</span>
+        <p><strong>Important:</strong> Before contributing, read and make sure you agree with the license of the repository you want to contribute to. Each project has its own license that defines how you can use, modify, and distribute the code. You can find it in the LICENSE file in the repository.</p>
+      </div>
+      
       <div class="steps">
         <div class="step">
           <div class="step-header">
@@ -75,69 +80,57 @@
       <h2>Contribution Process</h2>
       <p>Follow these steps to make your first contribution:</p>
       
-      <div class="process-vertical">
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">01</div>
+      <div class="process-flow">
+        <div class="process-row">
+          <div class="process-card">
+            <div class="card-number">01</div>
             <h4>Fork</h4>
             <p>Click "Fork" on GitHub to create your own copy</p>
           </div>
-          <div class="flow-arrow">↓</div>
-        </div>
-        
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">02</div>
+          <div class="process-card">
+            <div class="card-number">02</div>
             <h4>Clone</h4>
-            <p>Download your fork to local machine</p>
+            <p>Download your fork</p>
             <code>git clone https://github.com/YOUR_USERNAME/project.git</code>
           </div>
-          <div class="flow-arrow">↓</div>
         </div>
         
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">03</div>
+        <div class="process-arrow">↓</div>
+        
+        <div class="process-row single">
+          <div class="process-card">
+            <div class="card-number">03</div>
             <h4>Branch</h4>
             <p>Create a new branch for your changes</p>
             <code>git checkout -b feature/your-feature</code>
           </div>
-          <div class="flow-arrow">↓</div>
         </div>
         
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">04</div>
+        <div class="process-arrow">↓</div>
+        
+        <div class="process-row">
+          <div class="process-card">
+            <div class="card-number">04</div>
             <h4>Edit</h4>
             <p>Make your changes in the code and test them</p>
           </div>
-          <div class="flow-arrow">↓</div>
-        </div>
-        
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">05</div>
+          <div class="process-card">
+            <div class="card-number">05</div>
             <h4>Commit</h4>
-            <p>Save your changes with a descriptive message</p>
-            <code>git add . && git commit -m "feat: add new feature"</code>
+            <p>Save your changes</p>
+            <code>git add . && git commit -m "feat: description"</code>
           </div>
-          <div class="flow-arrow">↓</div>
         </div>
         
-        <div class="step-with-arrow">
-          <div class="process-step">
-            <div class="step-number">06</div>
-            <h4>Push</h4>
-            <p>Upload your changes to GitHub</p>
+        <div class="process-arrow">↓</div>
+        
+        <div class="process-row single">
+          <div class="process-card">
+            <div class="card-number">06-07</div>
+            <h4>Push and PR</h4>
+            <p>Upload to GitHub and create Pull Request</p>
             <code>git push origin feature/your-feature</code>
           </div>
-          <div class="flow-arrow">↓</div>
-        </div>
-        
-        <div class="process-step">
-          <div class="step-number">07</div>
-          <h4>Pull Request</h4>
-          <p>Go to your fork on GitHub and click "Create Pull Request". Fill in the template and submit!</p>
         </div>
       </div>
     </section>
@@ -153,6 +146,20 @@
           <li>Follow existing code style conventions</li>
           <li>Test your changes before submitting</li>
         </ul>
+      </div>
+
+      <div class="guideline-section">
+        <h3>Any Language is Welcome</h3>
+        <p>
+          You don't have to use the same languages already in the project! Want to add a Rust API to fingcomms (built with FastAPI)? Go ahead! Want to create a Python CLI tool for fingmap (built with Vue)? Be our guest!
+        </p>
+        <p>
+          We believe in <strong>polyglot development</strong>. If your language or framework is better suited for the job, use it. We'll figure out how to integrate it.
+        </p>
+        <div class="example">
+          <span class="example-label">Example:</span>
+          <p>fingcomms is built with FastAPI (Python) + Vue.js, but if you want to add a Rust microservice for image processing or a Go CLI tool for data export, that's exactly what we want to see!</p>
+        </div>
       </div>
       
       <div class="guideline-section">
@@ -241,6 +248,84 @@ section {
   margin-bottom: 3rem;
 }
 
+.getting-started {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.license-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(167, 139, 250, 0.1));
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.note-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.license-note p {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.getting-started .steps {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.getting-started .step {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.getting-started .step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.getting-started .step-number {
+  width: 28px;
+  height: 28px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.getting-started .step h3 {
+  color: var(--text-primary);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.getting-started .step p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.getting-started a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
 h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -282,42 +367,7 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.steps {
-  margin-top: 1.5rem;
-}
-
-.step {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.step-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.step-number {
-  width: 32px;
-  height: 32px;
-  background: var(--primary);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.step h3 {
-  margin: 0;
-}
-
-.process-vertical {
+.process-flow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,35 +375,34 @@ a {
   margin-top: 2rem;
 }
 
-.step-with-arrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.process-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
 }
 
-.flow-arrow {
-  color: var(--primary);
-  font-size: 1.5rem;
-  padding: 0.25rem 0;
+.process-row.single {
+  grid-template-columns: 1fr;
+  max-width: 500px;
 }
 
-.process-step {
+.process-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem;
   text-align: center;
-  width: 100%;
-  max-width: 700px;
   transition: all 0.2s;
 }
 
-.process-step:hover {
+.process-card:hover {
   border-color: var(--primary);
   transform: translateY(-3px);
 }
 
-.process-step .step-number {
+.card-number {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
@@ -361,113 +410,32 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.process-step h4 {
+.process-card h4 {
   color: var(--text-primary);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-.process-step p {
-  font-size: 0.9rem;
+.process-card p {
   color: var(--text-secondary);
+  font-size: 0.9rem;
   margin-bottom: 0.75rem;
-  line-height: 1.4;
 }
 
-.process-step code {
+.process-card code {
   display: block;
   background: var(--bg-tertiary);
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--primary);
   text-align: left;
-  overflow-x: auto;
-  white-space: pre;
 }
 
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.75rem;
-  margin-top: 2rem;
-  overflow-x: auto;
-}
-
-.process-grid .process-step {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  min-width: 140px;
-  transition: all 0.2s;
-}
-
-.process-grid .process-step:hover {
-  border-color: var(--primary);
-  transform: translateY(-3px);
-}
-
-.process-grid .step-number {
-  font-size: 1.5rem;
-  font-weight: 700;
+.process-arrow {
   color: var(--primary);
-  opacity: 0.6;
-}
-
-.process-grid .step-body h4 {
-  color: var(--text-primary);
-  margin-bottom: 0.25rem;
-  font-size: 0.95rem;
-}
-
-.process-grid .step-body p {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.25rem;
-  line-height: 1.4;
-}
-
-.process-grid .step-body code {
-  display: block;
-  background: var(--bg-tertiary);
-  padding: 0.4rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  white-space: pre;
-  color: var(--primary);
-}
-
-.process-timeline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.process-step-old {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.5rem;
-}
-
-.process-step-old h4 {
-  color: var(--primary);
-  margin-bottom: 0.5rem;
-}
-
-.process-step-old code {
-  display: block;
-  background: var(--bg-tertiary);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-  white-space: pre-wrap;
+  font-size: 2rem;
+  padding: 0.5rem 0;
 }
 
 .guidelines {
@@ -517,6 +485,23 @@ a {
 .signed-why h4 {
   margin-bottom: 0.5rem;
   color: var(--primary);
+}
+
+.example {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+}
+
+.example-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .signed-why ul {
@@ -612,9 +597,28 @@ a {
     gap: 1rem;
   }
   
-  .step {
-    flex-direction: column;
-    gap: 1rem;
+  .process-row {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  
+  .process-arrow {
+    font-size: 1.5rem;
+    padding: 0.25rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contribute h1 {
+    font-size: 1.75rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
   }
   
   .step-number {

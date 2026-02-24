@@ -14,6 +14,7 @@
             </button>
             <div class="dropdown-menu">
               <router-link to="/learn">How to Learn</router-link>
+              <router-link to="/learn/linux">Linux Guide</router-link>
               <router-link to="/git">Git Guide</router-link>
               <router-link to="/docs/signing">Signed Commits</router-link>
               <router-link to="/docs/licensing">Licensing</router-link>
@@ -36,6 +37,7 @@
     <footer class="footer">
       <p>Made with ❤️ by Fingdev Community</p>
       <p>Open Source projects for Engineering Students at UdelaR</p>
+      <p class="license">Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
     </footer>
   </div>
 </template>
@@ -221,6 +223,19 @@ body {
 
 .footer p {
   margin: 0.3rem 0;
+}
+
+.footer .license {
+  font-size: 0.85rem;
+}
+
+.footer .license a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer .license a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

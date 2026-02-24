@@ -4,6 +4,10 @@
     <p class="intro">
       Understanding open source licenses and their implications.
     </p>
+    <p class="official-link">
+      <span class="official-label">See all licenses:</span>
+      <a href="https://opensource.org/licenses" target="_blank">opensource.org/licenses</a>
+    </p>
 
     <section class="why-licenses">
       <h2>Why Licenses Matter</h2>
@@ -296,7 +300,33 @@ h1 {
 .intro {
   font-size: 1.2rem;
   color: var(--text-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.official-link {
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.official-label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.official-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.official-link a:hover {
+  text-decoration: underline;
 }
 
 section {
