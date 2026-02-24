@@ -24,6 +24,11 @@
           <p>Guarantees the commit wasn't modified after you created it.</p>
         </div>
         <div class="benefit-card">
+          <span class="benefit-icon">⚖️</span>
+          <h3>Legal Protection</h3>
+          <p>Provides cryptographic proof of authorship, useful in legal disputes or license compliance.</p>
+        </div>
+        <div class="benefit-card">
           <span class="benefit-icon">🤝</span>
           <h3>Trust</h3>
           <p>Other contributors know changes genuinely come from you.</p>
@@ -34,6 +39,34 @@
           <p>Industry best practice for open source projects.</p>
         </div>
       </div>
+    </section>
+
+    <section class="legal-protection">
+      <h2>Legal Protections</h2>
+      <p>
+        Signed commits provide important legal protections for both contributors and project maintainers:
+      </p>
+      <div class="legal-grid">
+        <div class="legal-item">
+          <h4>🔐 Attribution Proof</h4>
+          <p>Cryptographic signature proves who wrote or contributed specific code, establishing clear authorship.</p>
+        </div>
+        <div class="legal-item">
+          <h4>📜 License Compliance</h4>
+          <p>For projects with specific licenses (MIT, GPL, etc.), signed commits help track who contributed under what terms.</p>
+        </div>
+        <div class="legal-item">
+          <h4>⚖️ Liability Defense</h4>
+          <p>In case of legal disputes, signed commits provide evidence of good-faith contribution practices.</p>
+        </div>
+        <div class="legal-item">
+          <h4>🚫 Anti-Tampering</h4>
+          <p>Signature verification ensures code wasn't maliciously modified after submission, protecting users.</p>
+        </div>
+      </div>
+      <p class="legal-note">
+        <strong>Note:</strong> While signed commits provide strong technical evidence, they don't replace proper contributor license agreements (CLAs) for large projects. However, for community projects like ours, signed commits are the minimum standard for trust.
+      </p>
     </section>
 
     <section class="verification-status">
@@ -308,6 +341,55 @@ h2 {
   font-size: 0.9rem;
   color: var(--text-primary);
   white-space: pre;
+}
+
+.legal-protection {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.legal-protection > p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.legal-item {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.legal-item h4 {
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-item p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.legal-note {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.legal-note strong {
+  color: var(--primary);
 }
 
 .help-list {

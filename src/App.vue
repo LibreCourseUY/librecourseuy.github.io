@@ -8,8 +8,17 @@
         </router-link>
         <div class="nav-links">
           <router-link to="/">Home</router-link>
-          <router-link to="/learn">Learn</router-link>
-          <router-link to="/git">Git Guide</router-link>
+          <div class="nav-dropdown">
+            <button class="dropdown-trigger">
+              Learn <span class="dropdown-arrow">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <router-link to="/learn">How to Learn</router-link>
+              <router-link to="/git">Git Guide</router-link>
+              <router-link to="/docs/signing">Signed Commits</router-link>
+              <router-link to="/docs/licensing">Licensing</router-link>
+            </div>
+          </div>
           <router-link to="/repos">Projects</router-link>
           <router-link to="/docs">Docs</router-link>
           <router-link to="/contribute">Contribute</router-link>
@@ -100,7 +109,8 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .nav-links a {
@@ -112,6 +122,68 @@ body {
 
 .nav-links a:hover,
 .nav-links a.router-link-active {
+  color: var(--primary);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+
+.dropdown-trigger:hover {
+  color: var(--primary);
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s;
+  z-index: 100;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: all 0.15s;
+}
+
+.dropdown-menu a:hover {
+  background: var(--bg-tertiary);
   color: var(--primary);
 }
 

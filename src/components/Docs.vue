@@ -42,6 +42,10 @@
           <h4>Signed Commits Guide</h4>
           <p>Learn why signed commits are mandatory and how to set them up</p>
         </router-link>
+        <router-link to="/docs/licensing" class="doc-card">
+          <h4>Licensing Guide</h4>
+          <p>Understanding open source licenses and their implications</p>
+        </router-link>
         <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification" target="_blank" class="doc-card">
           <h4>GitHub Verification Docs</h4>
           <p>Official GitHub documentation on commit signature verification</p>

@@ -6,7 +6,10 @@
     </p>
 
     <section class="deepwiki-intro">
-      <h2>What is DeepWiki?</h2>
+      <div class="deepwiki-header">
+        <span class="deepwiki-icon">📚</span>
+        <h2>What is DeepWiki?</h2>
+      </div>
       <p>
         <a href="https://deepwiki.com" target="_blank" class="deepwiki-link">DeepWiki</a> 
         is an AI-powered documentation tool that automatically generates comprehensive documentation 
@@ -16,6 +19,10 @@
         We use DeepWiki across all our projects to help you understand the codebase faster. 
         Check the <router-link to="/repos">Projects</router-link> page for DeepWiki links to each repository.
       </p>
+      <div class="deepwiki-example">
+        <span class="example-label">Why it's useful:</span>
+        <p>When you're trying to contribute to a new project, DeepWiki helps you understand the codebase structure, API endpoints, and how different components connect — exactly when you need it.</p>
+      </div>
     </section>
 
     <section class="philosophy">
@@ -215,15 +222,28 @@ section {
 }
 
 .deepwiki-intro {
-  background: #6366f1;
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
   border: 1px solid #6366f1;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 2rem;
+}
+
+.deepwiki-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.deepwiki-icon {
+  font-size: 2.5rem;
 }
 
 .deepwiki-intro h2 {
   color: white;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .deepwiki-intro p {
@@ -231,13 +251,38 @@ section {
   line-height: 1.7;
 }
 
+.deepwiki-intro p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
 .deepwiki-link {
-  color: white;
+  color: #a5b4fc;
   font-weight: 600;
 }
 
 .deepwiki-link:hover {
   text-decoration: underline;
+}
+
+.deepwiki-example {
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 3px solid #a5b4fc;
+}
+
+.deepwiki-example .example-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #a5b4fc;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.deepwiki-example p {
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 h2 {
