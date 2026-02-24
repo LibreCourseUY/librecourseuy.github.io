@@ -75,44 +75,66 @@
       <h2>Contribution Process</h2>
       <p>Follow these steps to make your first contribution:</p>
       
-      <div class="process-steps">
+      <div class="process-timeline">
         <div class="process-step">
-          <h4>🔱 Fork</h4>
-          <p>Click the "Fork" button on the project's GitHub page to create your own copy.</p>
+          <div class="step-icon">1</div>
+          <div class="step-content">
+            <h4>Fork</h4>
+            <p>Click the "Fork" button on the project's GitHub page to create your own copy.</p>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>📥 Clone</h4>
-          <p>Download your fork to your computer:</p>
-          <code>git clone https://github.com/YOUR_USERNAME/project-name.git</code>
+          <div class="step-icon">2</div>
+          <div class="step-content">
+            <h4>Clone</h4>
+            <p>Download your fork to your computer:</p>
+            <code>git clone https://github.com/YOUR_USERNAME/project-name.git</code>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>🌿 Branch</h4>
-          <p>Create a new branch for your changes:</p>
-          <code>git checkout -b feature/your-feature-name</code>
+          <div class="step-icon">3</div>
+          <div class="step-content">
+            <h4>Branch</h4>
+            <p>Create a new branch for your changes:</p>
+            <code>git checkout -b feature/your-feature-name</code>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>✏️ Edit</h4>
-          <p>Make your changes in the code. Don't forget to test!</p>
+          <div class="step-icon">4</div>
+          <div class="step-content">
+            <h4>Edit</h4>
+            <p>Make your changes in the code. Don't forget to test!</p>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>💾 Commit</h4>
-          <p>Save your changes with a descriptive message:</p>
-          <code>git add .<br>git commit -m "feat: add new feature"</code>
+          <div class="step-icon">5</div>
+          <div class="step-content">
+            <h4>Commit</h4>
+            <p>Save your changes with a descriptive message:</p>
+            <code>git add .
+git commit -m "feat: add new feature"</code>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>📤 Push</h4>
-          <p>Upload your changes to GitHub:</p>
-          <code>git push origin feature/your-feature-name</code>
+          <div class="step-icon">6</div>
+          <div class="step-content">
+            <h4>Push</h4>
+            <p>Upload your changes to GitHub:</p>
+            <code>git push origin feature/your-feature-name</code>
+          </div>
         </div>
         
         <div class="process-step">
-          <h4>🔄 Pull Request</h4>
-          <p>Go to your fork on GitHub and click "Create Pull Request". Fill in the template and submit!</p>
+          <div class="step-icon">7</div>
+          <div class="step-content">
+            <h4>Pull Request</h4>
+            <p>Go to your fork on GitHub and click "Create Pull Request". Fill in the template and submit!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -169,18 +191,6 @@
           <li>Be responsive to feedback</li>
         </ul>
       </div>
-    </section>
-
-    <section class="beginner-friendly">
-      <h2>Beginner-Friendly Issues</h2>
-      <p>We specifically mark some issues as "good first issue" for newcomers. These typically involve:</p>
-      <ul class="beginner-list">
-        <li>Fixing typos in documentation</li>
-        <li>Adding comments to code</li>
-        <li>Simple bug fixes</li>
-        <li>UI improvements</li>
-        <li>Translating content</li>
-      </ul>
     </section>
 
     <section class="questions">
@@ -304,26 +314,73 @@ a {
   margin: 0;
 }
 
-.process-steps {
+.process-timeline {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .process-step {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  transition: all 0.2s;
 }
 
-.process-step h4 {
+.process-step:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.step-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
 
-.process-step code {
+.step-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-content code {
+  display: block;
+  background: var(--bg-tertiary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+}
+
+.process-step-old {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.process-step-old h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.process-step-old code {
   display: block;
   background: var(--bg-tertiary);
   padding: 0.5rem 1rem;
