@@ -10,6 +10,7 @@
           <router-link to="/">Home</router-link>
           <router-link to="/git">Git Guide</router-link>
           <router-link to="/repos">Projects</router-link>
+          <router-link to="/docs">Docs</router-link>
           <router-link to="/contribute">Contribute</router-link>
         </div>
       </div>
