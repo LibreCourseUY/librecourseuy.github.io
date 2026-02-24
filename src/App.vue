@@ -49,6 +49,7 @@ export default {
   --border: #30363d;
   --success: #3fb950;
   --purple: #a78bfa;
+  --warning: #d29922;
 }
 
 body {
