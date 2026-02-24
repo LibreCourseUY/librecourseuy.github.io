@@ -63,7 +63,7 @@
     <section class="mission">
       <h2>Our Mission</h2>
       <p>
-        Fingdev aims to help incoming engineering students at UdelaR:
+        Fingdev aims to help incoming computer engineering students at UdelaR:
       </p>
       <ul class="mission-list">
         <li>Learn to use Git and GitHub professionally</li>

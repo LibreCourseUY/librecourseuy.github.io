@@ -7,6 +7,7 @@ import Repos from './components/Repos.vue'
 import Contribute from './components/Contribute.vue'
 import Docs from './components/Docs.vue'
 import Signing from './components/Signing.vue'
+import HowToLearn from './components/HowToLearn.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -14,7 +15,8 @@ const routes = [
   { path: '/repos', component: Repos },
   { path: '/contribute', component: Contribute },
   { path: '/docs', component: Docs },
-  { path: '/docs/signing', component: Signing }
+  { path: '/docs/signing', component: Signing },
+  { path: '/learn', component: HowToLearn }
 ]
 
 const router = createRouter({

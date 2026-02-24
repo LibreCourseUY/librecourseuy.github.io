@@ -8,6 +8,7 @@
         </router-link>
         <div class="nav-links">
           <router-link to="/">Home</router-link>
+          <router-link to="/learn">Learn</router-link>
           <router-link to="/git">Git Guide</router-link>
           <router-link to="/repos">Projects</router-link>
           <router-link to="/docs">Docs</router-link>

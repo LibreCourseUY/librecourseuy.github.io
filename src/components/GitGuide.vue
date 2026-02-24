@@ -9,7 +9,7 @@
       <h2>What is Git?</h2>
       <p>
         <strong>Git</strong> is a version control system that helps you track changes in your code. 
-        Think of it as a time machine for your projects - you can go back to any previous version, 
+        Think of it as a time machine for your projects, you can go back to any previous version, 
         see who made what changes, and collaborate with others without conflicts.
       </p>
       <div class="key-points">
@@ -147,7 +147,7 @@ ssh-add ~/.ssh/id_ed25519</code>
       <div class="command-group">
         <h3>1. Starting a Project</h3>
         <div class="code-block">
-          <code>git clone https://github.com/username/repository.git
+          <code>git clone https://github.com/USERNAME/REPOSITORY_NAME.git
 git init</code>
         </div>
       </div>
