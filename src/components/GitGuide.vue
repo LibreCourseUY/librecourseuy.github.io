@@ -139,6 +139,10 @@ ssh-add ~/.ssh/id_ed25519</code>
           <code>ssh -T git@github.com</code>
         </div>
       </div>
+
+      <p class="signed-commits-note">
+        <router-link to="/docs/signing">Learn more about signed commits and why they are required</router-link>
+      </p>
     </section>
 
     <section class="basic-commands">
@@ -485,6 +489,19 @@ p {
 .install-group p {
   margin-top: 0.5rem;
   color: var(--text-secondary);
+}
+
+.signed-commits-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.signed-commits-note a {
+  color: var(--primary);
+  font-weight: 500;
 }
 
 .ssh-setup {

@@ -1,5 +1,7 @@
 # fingdev.github.io
 
+[![DeepWiki](https://deepwiki.com/badge-maker?url=https://deepwiki.com/Fingdev/fingdev.github.io)](https://deepwiki.com/Fingdev/fingdev.github.io)
+
 The official website for Fingdev - Open Source projects for Engineering students at UdelaR.
 
 ## About

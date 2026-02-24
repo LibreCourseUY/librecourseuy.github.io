@@ -5,12 +5,31 @@
       Our philosophy for learning programming effectively.
     </p>
 
+    <section class="deepwiki-intro">
+      <h2>What is DeepWiki?</h2>
+      <p>
+        <a href="https://deepwiki.com" target="_blank" class="deepwiki-link">DeepWiki</a> 
+        is an AI-powered documentation tool that automatically generates comprehensive documentation 
+        for your codebase. It creates API references, architecture diagrams, and code explanations.
+      </p>
+      <p>
+        We use DeepWiki across all our projects to help you understand the codebase faster. 
+        Check the <router-link to="/repos">Projects</router-link> page for DeepWiki links to each repository.
+      </p>
+    </section>
+
     <section class="philosophy">
-      <h2>Autonomía Asistida</h2>
+      <h2>Assisted Autonomy</h2>
       <p>
         We believe in <strong>assisted autonomy</strong> — a learning approach that balances 
         independence with guidance. This method builds real, lasting skills rather than 
         temporary copy-paste knowledge.
+      </p>
+      
+      <p>
+        <strong>DeepWiki</strong> (deepwiki.dev) is an AI-powered documentation service 
+        that automatically generates comprehensive documentation for GitHub repositories. 
+        It analyzes code and creates API references, architecture diagrams, and code explanations — a perfect example of when AI can be useful: when documentation is scarce or nonexistent.
       </p>
     </section>
 
@@ -193,6 +212,32 @@ h1 {
 
 section {
   margin-bottom: 3rem;
+}
+
+.deepwiki-intro {
+  background: #6366f1;
+  border: 1px solid #6366f1;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.deepwiki-intro h2 {
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.deepwiki-intro p {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+.deepwiki-link {
+  color: white;
+  font-weight: 600;
+}
+
+.deepwiki-link:hover {
+  text-decoration: underline;
 }
 
 h2 {

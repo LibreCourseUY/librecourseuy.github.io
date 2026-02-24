@@ -26,10 +26,13 @@
         
         <div class="repo-links">
           <a :href="repo.github" target="_blank" class="repo-link">
-            <span>📂</span> View on GitHub
+            <span>📂</span> GitHub
           </a>
           <a v-if="repo.demo" :href="repo.demo" target="_blank" class="repo-link">
-            <span>🚀</span> Live Demo
+            <span>🚀</span> Demo
+          </a>
+          <a v-if="repo.deepwiki" :href="repo.deepwiki" target="_blank" class="repo-link deepwiki">
+            <span>📚</span> DeepWiki
           </a>
         </div>
       </div>
@@ -55,7 +58,8 @@ export default {
             'Contribution guide'
           ],
           github: 'https://github.com/fingdev/fingdev.github.io',
-          demo: 'https://fingdev.github.io'
+          demo: 'https://fingdev.github.io',
+          deepwiki: 'https://deepwiki.com/Fingdev/fingdev.github.io'
         },
         {
           name: 'fingcomms',
@@ -69,7 +73,8 @@ export default {
             'Important links section'
           ],
           github: 'https://github.com/fingdev/fingcomms',
-          demo: null
+          demo: null,
+          deepwiki: 'https://deepwiki.com/Fingdev/fingcomms'
         },
         {
           name: 'fingDB',
@@ -83,7 +88,8 @@ export default {
             'Admin authentication'
           ],
           github: 'https://github.com/fingdev/fingdb',
-          demo: null
+          demo: null,
+          deepwiki: 'https://deepwiki.com/Fingdev/fingDB'
         },
         {
           name: 'fingmap',
@@ -97,7 +103,8 @@ export default {
             'Mobile responsive'
           ],
           github: 'https://github.com/fingdev/fingmap',
-          demo: null
+          demo: null,
+          deepwiki: 'https://deepwiki.com/Fingdev/fingmap'
         }
       ]
     }
@@ -234,5 +241,15 @@ export default {
 .repo-link:hover {
   background: var(--primary);
   border-color: var(--primary);
+}
+
+.repo-link.deepwiki {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+
+.repo-link.deepwiki:hover {
+  background: #4f46e5;
+  border-color: #4f46e5;
 }
 </style>
