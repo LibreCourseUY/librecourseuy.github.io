@@ -3,7 +3,7 @@
     <section class="hero">
       <h1>Welcome to Fingdev</h1>
       <p class="hero-subtitle">
-        Open Source projects made by students, for students at the Faculty of Engineering (UdelaR)
+        Open Source projects made by students, for students.
       </p>
       <div class="hero-buttons">
         <router-link to="/repos" class="btn btn-primary">Explore Projects</router-link>
@@ -15,7 +15,7 @@
       <h2>¿Por qué todo está en inglés?</h2>
       <p>
         Puede parecer raro ver todo en ingl&eacute;s en un sitio para estudiantes uruguayos. 
-        Aqu&iacute; te explicamos el razonamiento:
+        Te explicamos porqu&eacute;:
       </p>
       <ul class="english-reasons">
         <li>
@@ -25,7 +25,7 @@
         </li>
         <li>
           <strong>Buscar soluciones en inglés</strong>: 
-          Cuando tengas un error, el 90% de las respuestas están en Stack Overflow y documentación en inglés.
+          Cuando tengas un error, el 90% de las respuestas están en Stack Overflow / Reddit y documentación en inglés.
         </li>
         <li>
           <strong>Preparación profesional</strong>: 

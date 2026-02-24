@@ -341,10 +341,10 @@ a {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2.5rem;
   text-align: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   transition: all 0.2s;
 }
 
