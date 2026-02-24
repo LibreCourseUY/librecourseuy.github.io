@@ -98,6 +98,27 @@ We follow Conventional Commits:
 - `style:` Formatting
 - `refactor:` Code restructuring
 
+## Signed Commits (Required)
+
+All commits must be signed. This is a mandatory requirement for contributing.
+
+### Why Signed Commits?
+
+- **Security**: Verifies that you are who you claim to be
+- **Integrity**: Guarantees the commit wasn't modified after creation
+- **Trust**: Other contributors know changes genuinely come from you
+- **Professionalism**: Industry best practice for open source projects
+
+### Setup
+
+Follow our Git Guide to set up your SSH key:
+- [SSH Key Setup](https://fingdev.github.io/git)
+
+Configure Git to sign commits by default:
+```bash
+git config --global commit.gpgsign true
+```
+
 ## Questions?
 
 Open an issue on GitHub if you have questions!
