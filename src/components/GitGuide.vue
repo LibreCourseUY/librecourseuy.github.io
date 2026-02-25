@@ -263,13 +263,13 @@ git commit -m "fix: description of fix"</code>
       <h2>Commit Message Conventions</h2>
       <p>We follow the Conventional Commits format:</p>
       <div class="code-block">
-        <code>type: description
+        <pre v-pre>type: description
 
 # Examples:
 feat: add user login feature
 fix: resolve login error message
 docs: update installation instructions
-refactor: simplify authentication code</code>
+refactor: simplify authentication code</pre>
       </div>
       <table class="commit-types">
         <thead>
@@ -412,13 +412,14 @@ p {
   overflow-x: auto;
 }
 
-.code-block code {
+.code-block pre {
   font-family: 'Fira Code', 'Consolas', monospace;
   font-size: 0.9rem;
   color: var(--text-primary);
-  white-space: pre;
+  white-space: pre-wrap;
   display: block;
   line-height: 1.8;
+  margin: 0;
 }
 
 .steps {

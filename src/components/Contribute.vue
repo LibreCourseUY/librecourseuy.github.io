@@ -80,56 +80,64 @@
       <h2>Contribution Process</h2>
       <p>Follow these steps to make your first contribution:</p>
       
-      <div class="process-flow">
-        <div class="process-row">
-          <div class="process-card">
-            <div class="card-number">01</div>
-            <h4>Fork</h4>
-            <p>Click "Fork" on GitHub to create your own copy</p>
+      <div class="stacked-cards">
+        <div class="stacked-card">
+          <div class="card-number">01</div>
+          <div class="card-content">
+            <h4>Fork the Repository</h4>
+            <p>Click the "Fork" button on the GitHub repository to create your own copy of the project.</p>
           </div>
-          <div class="process-card">
-            <div class="card-number">02</div>
-            <h4>Clone</h4>
-            <p>Download your fork</p>
+        </div>
+        
+        <div class="stacked-card">
+          <div class="card-number">02</div>
+          <div class="card-content">
+            <h4>Clone Your Fork</h4>
+            <p>Download your forked repository to your local machine.</p>
             <code>git clone https://github.com/YOUR_USERNAME/project.git</code>
           </div>
         </div>
         
-        <div class="process-arrow">↓</div>
-        
-        <div class="process-row single">
-          <div class="process-card">
-            <div class="card-number">03</div>
-            <h4>Branch</h4>
-            <p>Create a new branch for your changes</p>
+        <div class="stacked-card">
+          <div class="card-number">03</div>
+          <div class="card-content">
+            <h4>Create a Branch</h4>
+            <p>Create a new branch for your changes. Don't work directly on main!</p>
             <code>git checkout -b feature/your-feature</code>
           </div>
         </div>
         
-        <div class="process-arrow">↓</div>
-        
-        <div class="process-row">
-          <div class="process-card">
-            <div class="card-number">04</div>
-            <h4>Edit</h4>
-            <p>Make your changes in the code and test them</p>
-          </div>
-          <div class="process-card">
-            <div class="card-number">05</div>
-            <h4>Commit</h4>
-            <p>Save your changes</p>
-            <code>git add . && git commit -m "feat: description"</code>
+        <div class="stacked-card">
+          <div class="card-number">04</div>
+          <div class="card-content">
+            <h4>Make Changes</h4>
+            <p>Edit the code, add features, or fix bugs. Make sure your changes work correctly.</p>
           </div>
         </div>
         
-        <div class="process-arrow">↓</div>
+        <div class="stacked-card">
+          <div class="card-number">05</div>
+          <div class="card-content">
+            <h4>Commit Your Changes</h4>
+            <p>Save your changes with a descriptive commit message.</p>
+            <code>git add . && git commit -m "feat: description of changes"</code>
+          </div>
+        </div>
         
-        <div class="process-row single">
-          <div class="process-card">
-            <div class="card-number">06-07</div>
-            <h4>Push and PR</h4>
-            <p>Upload to GitHub and create Pull Request</p>
+        <div class="stacked-card">
+          <div class="card-number">06</div>
+          <div class="card-content">
+            <h4>Push to GitHub</h4>
+            <p>Upload your changes to your forked repository.</p>
             <code>git push origin feature/your-feature</code>
+          </div>
+        </div>
+        
+        <div class="stacked-card">
+          <div class="card-number">07</div>
+          <div class="card-content">
+            <h4>Create Pull Request</h4>
+            <p>Go to the original repository and create a Pull Request. Describe your changes and submit!</p>
           </div>
         </div>
       </div>
@@ -367,59 +375,68 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.process-flow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  margin-top: 2rem;
-}
-
-.process-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  width: 100%;
-  max-width: 800px;
-}
-
-.process-row.single {
-  grid-template-columns: 1fr;
-  max-width: 500px;
-}
-
-.process-card {
+.contribution-process {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stacked-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.stacked-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
+  padding: 1.25rem;
   transition: all 0.2s;
 }
 
-.process-card:hover {
+.stacked-card:hover {
   border-color: var(--primary);
-  transform: translateY(-3px);
+  transform: translateX(4px);
 }
 
-.card-number {
-  font-size: 1.5rem;
+.stacked-card .card-number {
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--primary);
-  opacity: 0.4;
-  margin-bottom: 0.5rem;
+  opacity: 0.5;
+  min-width: 40px;
 }
 
-.process-card h4 {
+.card-content h4 {
   color: var(--text-primary);
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
 }
 
-.process-card p {
+.card-content p {
   color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.card-content code {
+  display: block;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.75rem;
+  color: var(--primary);
+  overflow-x: auto;
 }
 
 .process-card code {
@@ -597,14 +614,18 @@ a {
     gap: 1rem;
   }
   
-  .process-row {
-    grid-template-columns: 1fr;
-    max-width: 100%;
+  .stacked-cards {
+    gap: 0.5rem;
   }
   
-  .process-arrow {
-    font-size: 1.5rem;
-    padding: 0.25rem 0;
+  .stacked-card {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .stacked-card .card-number {
+    font-size: 1rem;
   }
 }
 
