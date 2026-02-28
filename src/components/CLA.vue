@@ -6,7 +6,7 @@
     </p>
 
     <section class="last-update">
-      <p>Última actualización: 24 de Febrero de 2026 (Versión 1)</p>
+      <p>Última actualización: 28 de Febrero de 2026 (Versión 1.1)</p>
     </section>
 
     <section class="section">
