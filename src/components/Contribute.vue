@@ -220,12 +220,12 @@
       <h2>Have Questions?</h2>
       <p>We're here to help! You can:</p>
       <div class="question-options">
-        <a href="https://github.com/fingdev/fingcomms/issues" target="_blank" class="question-card">
+        <a href="https://github.com/LibrecourseUY/fingcomms/issues" target="_blank" class="question-card">
           <span>💬</span>
           <h4>Open an Issue</h4>
           <p>Ask questions on GitHub</p>
         </a>
-        <a href="https://github.com/fingdev" target="_blank" class="question-card">
+        <a href="https://github.com/LibrecourseUY" target="_blank" class="question-card">
           <span>🐙</span>
           <h4>GitHub</h4>
           <p>Visit our organization</p>

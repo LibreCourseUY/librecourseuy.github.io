@@ -57,7 +57,7 @@ export default {
             'Documentation resources',
             'Contribution guide'
           ],
-          github: 'https://github.com/fingdev/fingdev.github.io',
+          github: 'https://github.com/LibrecourseUY/fingdev.github.io',
           demo: 'https://librecourseuy.github.io',
           deepwiki: 'https://deepwiki.com/LibrecourseUY/fingdev.github.io'
         },
@@ -72,7 +72,7 @@ export default {
             'Fuzzy search for better results',
             'Important links section'
           ],
-          github: 'https://github.com/fingdev/fingcomms',
+          github: 'https://github.com/LibrecourseUY/fingcomms',
           demo: null,
           deepwiki: 'https://deepwiki.com/LibrecourseUY/fingcomms'
         },
@@ -87,7 +87,7 @@ export default {
             'RESTful API design',
             'Admin authentication'
           ],
-          github: 'https://github.com/fingdev/fingdb',
+          github: 'https://github.com/LibrecourseUY/fingdb',
           demo: null,
           deepwiki: 'https://deepwiki.com/LibrecourseUY/fingDB'
         },
@@ -102,7 +102,7 @@ export default {
             'Room information',
             'Mobile responsive'
           ],
-          github: 'https://github.com/fingdev/fingmap',
+          github: 'https://github.com/LibrecourseUY/fingmap',
           demo: null,
           deepwiki: 'https://deepwiki.com/LibrecourseUY/fingmap'
         }

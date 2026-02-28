@@ -128,19 +128,19 @@
     <section class="quick-links">
       <h2>Our Projects</h2>
       <div class="links-grid">
-        <a href="https://github.com/fingdev/fingdev.github.io" target="_blank" class="link-card">
+        <a href="https://github.com/LibrecourseUY/fingdev.github.io" target="_blank" class="link-card">
           <h4>fingdev.github.io</h4>
           <p>This website - The LibrecourseUY community portal</p>
         </a>
-        <a href="https://github.com/fingdev/fingcomms" target="_blank" class="link-card">
+        <a href="https://github.com/LibrecourseUY/fingcomms" target="_blank" class="link-card">
           <h4>fingcomms</h4>
-          <p>Directory of Fing student groups</p>
+          <p>Directory of student groups</p>
         </a>
-        <a href="https://github.com/fingdev/fingdb" target="_blank" class="link-card">
+        <a href="https://github.com/LibrecourseUY/fingdb" target="_blank" class="link-card">
           <h4>fingDB</h4>
           <p>Central database with course information</p>
         </a>
-        <a href="https://github.com/fingdev/fingmap" target="_blank" class="link-card">
+        <a href="https://github.com/LibrecourseUY/fingmap" target="_blank" class="link-card">
           <h4>fingmap</h4>
           <p>Interactive campus map</p>
         </a>

@@ -6,7 +6,7 @@
     </p>
 
     <section class="last-update">
-      <p>Última actualización: 28 de Febrero de 2026 (Versión 1.1)</p>
+      <p>Última actualización: 28 de Febrero de 2026 (Versión 1.2)</p>
     </section>
 
     <section class="section">
@@ -130,22 +130,164 @@
       </ul>
       <div class="warning-box">
         <span class="warning-icon">⚠️</span>
-        <p>Estas medidas no generan compensación ni reclamo por parte de los contribuyentes.</p>
+        <p>Estas medidas no generan compensación ni derecho a reclamo.</p>
       </div>
     </section>
 
+    <section class="section governance-section">
+      <h2>8. Gobernanza del Proyecto</h2>
+      
+      <h3>8.1 Propósito</h3>
+      <p>Esta sección describe cómo se organiza LibrecourseUY, cómo se toman decisiones y cómo se gestionan responsabilidades comunitarias.</p>
+      <p>Complementa, pero no reemplaza:</p>
+      <ul class="clarification-list">
+        <li>CONTRIBUTING.md</li>
+        <li>CODE_OF_CONDUCT.md</li>
+        <li>TRADEMARK.md</li>
+        <li>Documentación específica de cada repositorio</li>
+      </ul>
+
+      <h3>8.2 Carácter Comunitario</h3>
+      <p>LibrecourseUY es una comunidad open source:</p>
+      <ul class="clarification-list">
+        <li>Independiente</li>
+        <li>No institucional</li>
+        <li>Impulsada por la comunidad</li>
+      </ul>
+      <p>Existe para crear, mantener y difundir recursos abiertos para el bien público.</p>
+
+      <h3>8.3 Principios de Gobernanza</h3>
+      <p>El proyecto se rige por:</p>
+      <ul class="clarification-list">
+        <li>Apertura</li>
+        <li>Claridad</li>
+        <li>Respeto</li>
+        <li>Practicidad</li>
+        <li>Responsabilidad</li>
+        <li>Protección del proyecto</li>
+      </ul>
+      <p>Los mantenedores podrán actuar para proteger:</p>
+      <ul class="clarification-list">
+        <li>Calidad técnica</li>
+        <li>Salud comunitaria</li>
+        <li>Seguridad jurídica</li>
+        <li>Carácter no institucional</li>
+      </ul>
+
+      <h3>8.4 Roles</h3>
+      
+      <h4>Contribuyentes</h4>
+      <p>Participan mediante:</p>
+      <ul class="clarification-list">
+        <li>Issues</li>
+        <li>Pull Requests</li>
+        <li>Documentación</li>
+        <li>Reportes</li>
+        <li>Propuestas</li>
+      </ul>
+      <p>Deben cumplir las normas del proyecto.</p>
+
+      <h4>Mantenedores</h4>
+      <p>Responsables de uno o más repositorios.</p>
+      <p>Pueden:</p>
+      <ul class="clarification-list">
+        <li>Revisar y fusionar PRs</li>
+        <li>Cerrar o priorizar issues</li>
+        <li>Solicitar cambios</li>
+        <li>Moderar discusiones</li>
+        <li>Gestionar releases</li>
+        <li>Actuar ante riesgos legales o técnicos</li>
+      </ul>
+      <p>Deben actuar de buena fe y razonablemente.</p>
+
+      <h4>Administradores de la Organización</h4>
+      <p>Pueden:</p>
+      <ul class="clarification-list">
+        <li>Gestionar configuración global</li>
+        <li>Crear o archivar repositorios</li>
+        <li>Designar o remover mantenedores</li>
+        <li>Resolver disputas inter-repositorio</li>
+        <li>Actuar ante riesgos legales, de seguridad o identidad</li>
+      </ul>
+
+      <h3>8.5 Toma de Decisiones</h3>
+      <p>Siempre que sea posible, las decisiones se tomarán mediante discusión abierta y consenso razonable.</p>
+      <p>No se requiereunanimidad.</p>
+      <p>En ausencia de consenso en plazo razonable, el mantenedor o administrador competente podrá decidir y documentar cuando corresponda.</p>
+
+      <h3>8.6 Alcance de Autoridad</h3>
+      <p>Los mantenedores pueden rechazar contribuciones que sean:</p>
+      <ul class="clarification-list">
+        <li>Fuera de alcance</li>
+        <li>De baja calidad</li>
+        <li>Legalmente riesgosas</li>
+        <li>Engañosas respecto a autoría</li>
+        <li>Incompatibles con estándares</li>
+        <li>Perjudiciales para la sostenibilidad</li>
+      </ul>
+
+      <h3>8.7 Autonomía de Repositorios</h3>
+      <p>Cada repositorio puede tener reglas adicionales técnicas, siempre que no contradigan:</p>
+      <ul class="clarification-list">
+        <li>Normas de conducta</li>
+        <li>Requisitos legales de contribución</li>
+        <li>Protección de identidad</li>
+        <li>Decisiones de gobernanza organizacional</li>
+      </ul>
+
+      <h3>8.8 Designación y Remoción de Mantenedores</h3>
+      <p>No existe derecho automático a ser mantenedor.</p>
+      <p>Puede designarse en función de:</p>
+      <ul class="clarification-list">
+        <li>Contribuciones sostenidas</li>
+        <li>Juicio técnico</li>
+        <li>Colaboración respetuosa</li>
+        <li>Alineación con objetivos</li>
+      </ul>
+      <p>El acceso podrá ser removido por:</p>
+      <ul class="clarification-list">
+        <li>Inactividad</li>
+        <li>Mal uso de permisos</li>
+        <li>Incumplimiento de normas</li>
+        <li>Conducta perjudicial</li>
+        <li>Riesgos de seguridad</li>
+      </ul>
+      <p>Estas decisiones pueden adoptarse como medida de gobernanza práctica.</p>
+
+      <h3>8.9 Autoridad de Emergencia</h3>
+      <p>En situaciones urgentes, los mantenedores o administradores podrán actuar inmediatamente ante:</p>
+      <ul class="clarification-list">
+        <li>Incidentes de seguridad</li>
+        <li>Código malicioso</li>
+        <li>Amenazas legales</li>
+        <li>Suplantación</li>
+        <li>Riesgo de confusión institucional</li>
+        <li>Acoso</li>
+      </ul>
+      <p>Podrá brindarse explicación posterior cuando sea apropiado.</p>
+
+      <h3>8.10 Relación con Instituciones</h3>
+      <p>La participación de estudiantes o funcionarios de una institución:</p>
+      <p><strong>NO</strong> convierte a LibrecourseUY en parte de dicha institución.</p>
+      <p>Ningún participante puede alegar representación institucional sin autorización expresa y verificable.</p>
+
+      <h3>8.11 Modificaciones a la Gobernanza</h3>
+      <p>La gobernanza podrá actualizarse conforme evolucione la comunidad.</p>
+      <p>Los cambios podrán ser adoptados por mantenedores o administradores competentes y comunicados cuando corresponda.</p>
+    </section>
+
     <section class="section highlight">
-      <h2>8. Firma criptográfica obligatoria (GPG)</h2>
-      <p>Para contribuir a LibrecourseUY es <strong>obligatorio</strong>:</p>
+      <h2>9. Firma criptográfica obligatoria (GPG)</h2>
+      <p>Es <strong>obligatorio</strong>:</p>
       <ul class="requirement-list">
         <li>Firmar todos los commits con clave GPG válida.</li>
-        <li>Mantener coherencia entre identidad GitHub y firma criptográfica.</li>
+        <li>Mantener coherencia entre identidad GitHub y firma.</li>
       </ul>
-      <p>La firma GPG constituye:</p>
+      <p>La firma constituye:</p>
       <ul class="clarification-list">
-        <li>Manifestación electrónica de aceptación de este CLA.</li>
+        <li>Aceptación electrónica de este CLA.</li>
         <li>Reconocimiento de autoría.</li>
-        <li>Consentimiento a los términos aquí establecidos.</li>
+        <li>Consentimiento a sus términos.</li>
       </ul>
       <div class="warning-box">
         <span class="warning-icon">⚠️</span>
@@ -154,33 +296,33 @@
     </section>
 
     <section class="section">
-      <h2>9. Ausencia de Relación Jurídica</h2>
-      <p>Contribuir a LibrecourseUY:</p>
+      <h2>10. Ausencia de Relación Jurídica</h2>
+      <p>Contribuir <strong>no</strong>:</p>
       <ul class="clarification-list">
-        <li>No genera relación laboral.</li>
-        <li>No genera compensación económica.</li>
-        <li>No crea sociedad ni asociación jurídica.</li>
-        <li>No implica representación institucional.</li>
+        <li>Genera relación laboral.</li>
+        <li>Genera compensación económica.</li>
+        <li>Crea sociedad o asociación.</li>
+        <li>Implica representación institucional.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>10. Exención de Responsabilidad</h2>
-      <p>El software se proporciona "AS IS", sin garantías de ningún tipo.</p>
-      <p>LibrecourseUY y sus mantenedores no serán responsables por daños directos o indirectos derivados del uso del software.</p>
+      <h2>11. Exención de Responsabilidad</h2>
+      <p>El software se proporciona "AS IS", sin garantías.</p>
+      <p>LibrecourseUY y sus mantenedores no serán responsables por daños derivados de su uso.</p>
     </section>
 
     <section class="section">
-      <h2>11. Irrevocabilidad</h2>
-      <p>Una vez integrada una Contribución, la licencia otorgada es irrevocable salvo falsedad en las declaraciones realizadas por el Contribuyente.</p>
+      <h2>12. Irrevocabilidad</h2>
+      <p>La licencia otorgada es irrevocable una vez integrada la Contribución, salvo falsedad en declaraciones del Contribuyente.</p>
     </section>
 
     <section class="section highlight-success">
-      <h2>12. Aceptación</h2>
+      <h2>13. Aceptación</h2>
       <p>Se considera aceptado este CLA al:</p>
       <ul class="acceptance-list">
-        <li>Enviar un Pull Request con commits firmados criptográficamente.</li>
-        <li>Contribuir contenido que sea incorporado al repositorio.</li>
+        <li>Enviar Pull Request con commits firmados.</li>
+        <li>Contribuir contenido incorporado.</li>
         <li>Manifestar aceptación electrónica si el sistema lo requiere.</li>
       </ul>
     </section>
@@ -247,6 +389,12 @@ h3 {
   color: var(--primary);
 }
 
+h4 {
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--text-primary);
+}
+
 p {
   color: var(--text-secondary);
   line-height: 1.7;
@@ -269,6 +417,10 @@ li {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
+}
+
+.governance-section {
+  background: linear-gradient(135deg, var(--bg-secondary), rgba(88, 166, 255, 0.05));
 }
 
 .clarification-list {

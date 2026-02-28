@@ -6,7 +6,7 @@ This guide explains how to host the Fingdev website on GitHub Pages.
 
 ### Step 1: Fork the Repository
 
-1. Go to: https://github.com/fingdev/fingdev.github.io
+1. Go to: https://github.com/LibrecourseUY/fingdev.github.io
 2. Click the "Fork" button
 3. Select your GitHub account
 
