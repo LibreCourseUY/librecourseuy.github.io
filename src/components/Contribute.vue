@@ -3,7 +3,7 @@
     <h1>How to Contribute</h1>
     <p class="intro">
       We welcome contributions from everyone! Whether you're a beginner or experienced developer, 
-      there's a place for you in Fingdev.
+      there's a place for you in LibrecourseUY.
     </p>
 
     <section class="why-contribute">

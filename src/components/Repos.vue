@@ -2,7 +2,7 @@
   <div class="repos">
     <h1>Our Projects</h1>
     <p class="intro">
-      Explore the open source projects developed by the Fingdev community.
+      Explore the open source projects developed by the LibrecourseUY community.
     </p>
 
     <div class="repos-grid">
@@ -49,7 +49,7 @@ export default {
         {
           name: 'fingdev.github.io',
           icon: '🌐',
-          description: 'The official Fingdev community portal. This website you are visiting right now.',
+          description: 'The official LibrecourseUY community portal. This website you are visiting right now.',
           tech: ['Vue.js 3', 'Vue Router', 'Vite', 'JavaScript'],
           features: [
             'Community portal',
@@ -58,8 +58,8 @@ export default {
             'Contribution guide'
           ],
           github: 'https://github.com/fingdev/fingdev.github.io',
-          demo: 'https://fingdev.github.io',
-          deepwiki: 'https://deepwiki.com/Fingdev/fingdev.github.io'
+          demo: 'https://librecourseuy.github.io',
+          deepwiki: 'https://deepwiki.com/LibrecourseUY/fingdev.github.io'
         },
         {
           name: 'fingcomms',
@@ -74,7 +74,7 @@ export default {
           ],
           github: 'https://github.com/fingdev/fingcomms',
           demo: null,
-          deepwiki: 'https://deepwiki.com/Fingdev/fingcomms'
+          deepwiki: 'https://deepwiki.com/LibrecourseUY/fingcomms'
         },
         {
           name: 'fingDB',
@@ -89,7 +89,7 @@ export default {
           ],
           github: 'https://github.com/fingdev/fingdb',
           demo: null,
-          deepwiki: 'https://deepwiki.com/Fingdev/fingDB'
+          deepwiki: 'https://deepwiki.com/LibrecourseUY/fingDB'
         },
         {
           name: 'fingmap',
@@ -104,7 +104,7 @@ export default {
           ],
           github: 'https://github.com/fingdev/fingmap',
           demo: null,
-          deepwiki: 'https://deepwiki.com/Fingdev/fingmap'
+          deepwiki: 'https://deepwiki.com/LibrecourseUY/fingmap'
         }
       ]
     }

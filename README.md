@@ -1,12 +1,12 @@
 # fingdev.github.io
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Fingdev/fingdev.github.io)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/LibrecourseUY/fingdev.github.io)
 
-The official website for Fingdev - Open Source projects for Engineering students at UdelaR.
+The official website for LibrecourseUY - Open Source projects for Engineering students at UdelaR.
 
 ## About
 
-This website serves as the central hub for the Fingdev project, providing:
+This website serves as the central hub for the LibrecourseUY project, providing:
 - Information about our mission and projects
 - A beginner-friendly Git & GitHub tutorial
 - Contribution guides
@@ -29,7 +29,7 @@ This website serves as the central hub for the Fingdev project, providing:
 
 ```bash
 # Clone the repository
-git clone https://github.com/fingdev/fingdev.github.io.git
+git clone https://github.com/LibrecourseUY/fingdev.github.io.git
 cd fingdev.github.io
 
 # Install dependencies
@@ -82,4 +82,4 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-Made with ❤️ by the Fingdev community
+Made with ❤️ by the LibrecourseUY community

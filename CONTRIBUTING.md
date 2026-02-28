@@ -4,7 +4,7 @@ Thank you for your interest in improving our website! This guide will help you g
 
 ## About the Website
 
-This is the official website for Fingdev, built with Vue.js 3. It includes:
+This is the official website for LibrecourseUY, built with Vue.js 3. It includes:
 - Home page with project overview
 - Git & GitHub guide for beginners
 - Projects showcase
@@ -27,7 +27,7 @@ This is the official website for Fingdev, built with Vue.js 3. It includes:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/fingdev/fingdev.github.io.git
+git clone https://github.com/LibrecourseUY/fingdev.github.io.git
 cd fingdev.github.io
 ```
 
@@ -125,4 +125,4 @@ Open an issue on GitHub if you have questions!
 
 ---
 
-Made with ❤️ by the Fingdev community
+Made with ❤️ by the LibrecourseUY community

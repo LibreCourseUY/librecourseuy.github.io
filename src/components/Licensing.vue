@@ -264,7 +264,7 @@
 
     <section class="our-licenses">
       <h2>Our Projects</h2>
-      <p>All Fingdev projects use the <strong>MIT License</strong> unless otherwise specified.</p>
+      <p>All LibrecourseUY projects use the <strong>MIT License</strong> unless otherwise specified.</p>
       <p>This choice was made because it:</p>
       <ul class="license-reasons">
         <li>Allows maximum adoption and use</li>

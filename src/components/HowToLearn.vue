@@ -253,7 +253,7 @@
         </p>
         <div class="example">
           <span class="example-label">Example:</span>
-          <p>You've been stuck on the same error for 2+ hours. You've searched everywhere and nothing works. That's when you ask for help in the Fingdev Discord or group chats.</p>
+          <p>You've been stuck on the same error for 2+ hours. You've searched everywhere and nothing works. That's when you ask for help in the LibrecourseUY Discord or group chats.</p>
         </div>
       </div>
     </section>
@@ -345,7 +345,7 @@
         <router-link to="/repos" class="start-card">
           <span class="start-icon">📂</span>
           <h4>Our Projects</h4>
-          <p>Contribute to real Fingdev projects</p>
+          <p>Contribute to real LibrecourseUY projects</p>
         </router-link>
         <router-link to="/docs" class="start-card">
           <span class="start-icon">📚</span>

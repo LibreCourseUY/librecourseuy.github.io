@@ -2,7 +2,7 @@
   <div class="cla-page">
     <h1>Contributor License Agreement (CLA)</h1>
     <p class="intro">
-      Fingdev
+      LibrecourseUY
     </p>
 
     <section class="last-update">
@@ -12,7 +12,7 @@
     <section class="section">
       <h2>1. Naturaleza del Proyecto</h2>
       <p>
-        Fingdev es una iniciativa independiente, comunitaria y sin fines de lucro, creada por estudiantes para estudiantes.
+        LibrecourseUY es una iniciativa independiente, comunitaria y sin fines de lucro, creada por estudiantes para estudiantes.
       </p>
       <ul class="clarification-list">
         <li>No constituye entidad jurídica formal.</li>
@@ -25,17 +25,8 @@
     <section class="section">
       <h2>2. No Afiliación Institucional</h2>
       <p>
-        Fingdev no está afiliada, patrocinada, avalada, autorizada ni respaldada oficialmente por la Facultad de Ingeniería (FING), la Universidad de la República (Udelar) ni por ninguna otra dependencia académica.
+        LibrecourseUY no está afiliada, patrocinada, avalada, autorizada ni respaldada oficialmente por ninguna institución académica o dependencia gubernamental.
       </p>
-      <p>
-        <strong>El uso del término "Fing" en "Fingdev":</strong>
-      </p>
-      <ul class="clarification-list">
-        <li>Tiene carácter descriptivo y comunitario.</li>
-        <li>No implica representación institucional.</li>
-        <li>No implica autorización formal de uso de marca.</li>
-        <li>No crea relación jurídica alguna con FING o Udelar.</li>
-      </ul>
       <div class="warning-box">
         <span class="warning-icon">⚠️</span>
         <p>Cualquier interpretación de oficialidad es incorrecta.</p>
@@ -44,7 +35,7 @@
 
     <section class="section">
       <h2>3. Definición de Contribución</h2>
-      <p>Se considera "Contribución" cualquier envío intencional a repositorios de Fingdev, incluyendo:</p>
+      <p>Se considera "Contribución" cualquier envío intencional a repositorios de LibrecourseUY, incluyendo:</p>
       <ul class="contribution-list">
         <li>Código fuente</li>
         <li>Documentación</li>
@@ -102,7 +93,7 @@
       <h3>7.1 No licencia de marca</h3>
       <p>Este Acuerdo no otorga licencia sobre:</p>
       <ul class="clarification-list">
-        <li>El nombre "Fingdev"</li>
+        <li>El nombre "LibrecourseUY"</li>
         <li>Nombres de repositorios</li>
         <li>Dominios</li>
         <li>Identidad visual del proyecto</li>
@@ -113,7 +104,7 @@
       <h3>7.2 Prohibición de uso de signos institucionales</h3>
       <p>Salvo autorización escrita verificable, está prohibido incorporar:</p>
       <ul class="clarification-list">
-        <li>Logotipos oficiales de FING o Udelar</li>
+        <li>Logotipos oficiales de instituciones</li>
         <li>Escudos o sellos institucionales</li>
         <li>Identidad visual institucional</li>
         <li>Material gráfico que sugiera oficialidad</li>
@@ -128,11 +119,8 @@
         <li>Diseñar interfaces que simulen canales oficiales.</li>
       </ul>
 
-      <h3>7.4 Uso descriptivo limitado</h3>
-      <p>Las referencias a FING o Udelar solo podrán realizarse con fines descriptivos y de contexto, sin generar confusión sobre patrocinio o afiliación.</p>
-
-      <h3>7.5 Facultad de medidas correctivas y rebranding</h3>
-      <p>Para mitigar riesgos legales, Fingdev podrá:</p>
+      <h3>7.4 Facultad de medidas correctivas y rebranding</h3>
+      <p>Para mitigar riesgos legales, LibrecourseUY podrá:</p>
       <ul class="clarification-list">
         <li>Modificar nombres de repositorios.</li>
         <li>Cambiar identidad visual.</li>
@@ -148,7 +136,7 @@
 
     <section class="section highlight">
       <h2>8. Firma criptográfica obligatoria (GPG)</h2>
-      <p>Para contribuir a Fingdev es <strong>obligatorio</strong>:</p>
+      <p>Para contribuir a LibrecourseUY es <strong>obligatorio</strong>:</p>
       <ul class="requirement-list">
         <li>Firmar todos los commits con clave GPG válida.</li>
         <li>Mantener coherencia entre identidad GitHub y firma criptográfica.</li>
@@ -167,7 +155,7 @@
 
     <section class="section">
       <h2>9. Ausencia de Relación Jurídica</h2>
-      <p>Contribuir a Fingdev:</p>
+      <p>Contribuir a LibrecourseUY:</p>
       <ul class="clarification-list">
         <li>No genera relación laboral.</li>
         <li>No genera compensación económica.</li>
@@ -179,7 +167,7 @@
     <section class="section">
       <h2>10. Exención de Responsabilidad</h2>
       <p>El software se proporciona "AS IS", sin garantías de ningún tipo.</p>
-      <p>Fingdev y sus mantenedores no serán responsables por daños directos o indirectos derivados del uso del software.</p>
+      <p>LibrecourseUY y sus mantenedores no serán responsables por daños directos o indirectos derivados del uso del software.</p>
     </section>
 
     <section class="section">

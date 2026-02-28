@@ -4,7 +4,7 @@
       <div class="nav-container">
         <router-link to="/" class="logo">
           <span class="logo-icon">🎓</span>
-          <span class="logo-text">Fingdev</span>
+          <span class="logo-text">LibrecourseUY</span>
         </router-link>
         <div class="nav-links" :class="{ 'nav-open': menuOpen }">
           <router-link to="/" @click="menuOpen = false">Home</router-link>
@@ -41,7 +41,7 @@
       <router-view />
     </main>
     <footer class="footer">
-      <p>Made with ❤️ by Fingdev Community</p>
+      <p>Made with ❤️ by LibrecourseUY Community</p>
       <p>Open Source projects for Engineering Students at UdelaR</p>
       <p class="license">Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
     </footer>

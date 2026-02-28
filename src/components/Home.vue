@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="hero">
-      <h1>Welcome to Fingdev</h1>
+      <h1>Welcome to LibrecourseUY</h1>
       <p class="hero-subtitle">
         Open Source projects made by students, for students.
       </p>
@@ -63,7 +63,7 @@
     <section class="mission">
       <h2>Our Mission</h2>
       <p>
-        Fingdev aims to help incoming computer engineering students at UdelaR:
+        LibrecourseUY aims to help incoming computer engineering students at UdelaR:
       </p>
       <ul class="mission-list">
         <li>Learn to use Git and GitHub professionally</li>
@@ -130,7 +130,7 @@
       <div class="links-grid">
         <a href="https://github.com/fingdev/fingdev.github.io" target="_blank" class="link-card">
           <h4>fingdev.github.io</h4>
-          <p>This website - The Fingdev community portal</p>
+          <p>This website - The LibrecourseUY community portal</p>
         </a>
         <a href="https://github.com/fingdev/fingcomms" target="_blank" class="link-card">
           <h4>fingcomms</h4>
