@@ -63,7 +63,7 @@
     <section class="mission">
       <h2>Our Mission</h2>
       <p>
-        LibrecourseUY aims to help incoming computer engineering students at UdelaR:
+        LibrecourseUY aims to help students:
       </p>
       <ul class="mission-list">
         <li>Learn to use Git and GitHub professionally</li>
