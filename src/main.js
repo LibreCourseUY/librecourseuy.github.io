@@ -12,6 +12,7 @@ import Licensing from './components/Licensing.vue'
 import Linux from './components/Linux.vue'
 import CLA from './components/CLA.vue'
 import WhyOpenSource from './components/WhyOpenSource.vue'
+import { useMetrics } from './composables/useMetrics'
 
 const routes = [
   { path: '/', component: Home },
@@ -33,6 +34,11 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
   }
+})
+
+router.afterEach((to) => {
+  const { trackView } = useMetrics()
+  trackView(to.path)
 })
 
 createApp(App).use(router).mount('#app')
