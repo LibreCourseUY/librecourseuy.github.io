@@ -461,6 +461,7 @@ p {
   border-radius: 4px;
   font-family: monospace;
   font-size: 0.85rem;
+  overflow-wrap: break-word;
 }
 
 .commit-types {
